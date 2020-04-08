@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <title>questionnaire</title>
+</head>
+<body>
+    <div id ="page">
+        <div id ="questionCat">
+            <p id ="catText">test</p>
+        </div> 
+        <!-- above is category of questions if it was to be changed -->
+        <br><br><br>
+        <button id ="question"type = "button" onclick = "start()">
+            <p id ="questionText"></p>
+            <br>
+            <p id ="questionTextP2"></p>
+            <p id ="questionTextP3"></p>
+        </button><br><br>
+        <!-- above is the question box for the text asking or detailing the question -->
+        <div id = "answersBox">
+            <button id = "answer1" type = "button" onclick = "selectAnswer1()">
+                <p id = "answer1Text"></p>
+            </button>
+            <button id = "answer2" type = "button" onclick = "selectAnswer2()">
+                <p id = "answer2Text"></p>
+            </button>
+            <button id = "answer3" type = "button" onclick = "selectAnswer3()">
+                <p id = "answer3Text"></p>
+            </button>
+            <button id = "answer4" type = "button" onclick = "selectAnswer4()">
+                <p id = "answer4Text"></p>
+            </button>
+        </div>
+        <!-- above are the tags for the answer buttons and text -->
+        <br><br> 
+        <button id = "nextQ" type = "button" onclick="nextQ()">
+            <p id = "nextQText"></p>
+            <p id = "nextQText2"></p>
+        </button>
+        <!-- above is the button to move onto the next set of answers/questions -->
+
+    </div>
+</body>
+<script src = "app.js"></script>
+</html>
